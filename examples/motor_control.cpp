@@ -44,7 +44,14 @@ int main(int argc, char **argv) {
   std::string port = "/dev/ttyUSB0";
   smc.connect(port);
 
-  delay_ms(5000); // wait for the arduino nano to fully setup
+  // wait for the smc to fully setup
+  for (int i=1; i<=5; i+=1){ 
+    delay_ms(1000);
+    std::cout << "configuring controller: " << i << " sec" << std::endl;
+  }
+  smc.sendTargetVel(0.0, 0.0); // targetA, targetB
+  std::cout << "configuration complete" << std::endl;
+
 
   smc.sendTargetVel(lowTargetVel, lowTargetVel); // targetA, targetB
   sendHigh = true;
