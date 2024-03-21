@@ -16,7 +16,7 @@ A simple way to get started is simply to try out and follow the example code in 
 
 - Download (by clicking on the green Code button above) or clone the repo into your PC.
 
-- A simple way to get started is simply to try out and follow the example code.
+- A simple way to get started is simply to try out and follow the example `motor_control.cpp` code.
 
 - make, build and run the example code.
   > cd into the root directory
@@ -31,10 +31,10 @@ A simple way to get started is simply to try out and follow the example code in 
     cmake --build ./build/
     ````
     ````
-    ./build/example_control_code
+    ./build/motor_control
     ````
 
-- You can follow the pattern used in the example in your own code.
+- You can follow the pattern used in the example `motor_control.cpp` in your own code.
 
 
 ## Basic Library functions and usage
