@@ -1,9 +1,7 @@
 #ifndef SMC_ARDUINO_LIBSERIAL_COMM_HPP
 #define SMC_ARDUINO_LIBSERIAL_COMM_HPP
 
-// #include <cstring>
 #include <sstream>
-// #include <cstdlib>
 #include <libserial/SerialPort.h>
 #include <iostream>
 
